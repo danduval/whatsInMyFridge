@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body, html {
+            font-family: arial;
+            text-align: center;
+        }
+        table {
+            margin: auto;
+        }
+        td {
+            margin: 1rem;
+            padding: 1rem;
+            background-color: lightgrey;
+        }
+        nav {
+            margin: 2rem;
+        }
+        nav a {
+            margin: 2rem;
+        }
+        label, input {
+            margin: 2rem;
+        }
+    </style>
+</head>
+<body>
+<h1>WHATS IN MY FRIDGE</h1>
+<nav>
+    <a href="/">HOME</a><a href="/add">ADD</a>
+</nav>
+<div id="wrapper">
+{% block content %}
+
+    {% endblock %}
+
+</div>
+</body>
+</html>

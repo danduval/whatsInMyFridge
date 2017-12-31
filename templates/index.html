@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<table>
+    <tr>
+        <td>name</td>
+        <td>quantity</td>
+        <td>date</td>
+        <td>category</td>
+    </tr>
+{% for grocery in groceries %}
+    <tr>
+        <td>{{grocery.name}}</td>
+        <td>{{grocery.quantity}}</td>
+        <td>{{grocery.date}}</td>
+        <td>{{grocery.category}}</td>
+    </tr>
+{% endfor %}
+</table>
+
+{% endblock %}
